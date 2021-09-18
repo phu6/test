@@ -1,0 +1,229 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color:black;
+    border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.header{
+    display: flex;
+    height: 100px;
+}
+.header_logo{
+    width: 200px;
+    height: 100%;
+}
+.header_logo_image{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 25%;
+}
+.type{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.shoeName{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.info{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.price_title{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.price_number{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.button_cart{
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.title{
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.size_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.size{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    margin: 8px;
+    line-height: 60px;
+    text-align: center;
+    border:1px solid black;
+}
+.color{
+    margin-top: 100px
+}
+.chooseColor{
+    display: flex; 
+}
+.color{
+    margin: 8px;
+}
+.itemcolor1{
+    background-color: palevioletred;
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.itemcolor2{
+    background-color: lightskyblue;
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.itemcolor3{
+    background-color: yellow;
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.shoe_picture{
+    display: flex;
+}
+.button{
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    background-color: white;
+}
+.imgMain{
+    margin-top: 32px;
+    margin-left: 24px;
+}
+.imgMain img{
+    width: 80%;
+    height: 80%;
+    transform: rotate(-35deg);
+}
+.switchImgButton{
+    display: flex;
+    margin-left: 70%;
+    margin-top: 50px;
+}
+.switch,.grid-button{
+    text-decoration: none;
+}
+.backSwitch{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: lightgray;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 50px;
+    
+}
+.forwardSwitch{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    background-color:lightgray;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 50px;
+}
+.backSwitch i, .forwardSwitch i{
+    background-color: lightgray;
+}
+.grid-button:hover .size{
+    background-color:lightgray;
+    
+}
+.link{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 50px;
+}
+.picture1 img{
+    width:60px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.picture2 img{
+    width:60px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+    transform: scaleX(-1);
+}
+.picture3 img{
+    width:60px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.picture4 img{
+    width:60px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.minipic{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+.minipic img:hover{
+    border:1px solid black;
+}
+.header_icon{
+    display: flex;
+    margin-left: 80%;
+    margin-top: 24px;
+    line-height: 50px;
+}
+.menu_icon, .search_icon, .shopping_icon{
+    margin-left:8px;
+    margin-right: 8px;
+}
+.shopping_icon{
+    margin-top: 24px;
+}
+.menu_icon{
+    margin-right: 8px;
+    margin-top: 28px;
+}

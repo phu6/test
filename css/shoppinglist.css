@@ -1,0 +1,48 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color:black;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.header{
+    display: flex;
+    height: 100px;
+}
+.header_logo{
+    width: 200px;
+    height: 100%;
+}
+.header_logo_image{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.shoppinglist-container{
+    width: 400px;
+    height: 100%;
+    margin-left: 40%;
+
+}
+.table{
+    border: 1px solid black;
+}
+tr{
+    border: 1px solid black;
+}
+
+.form-main{
+    border: 1px solid black;
+    padding:16px;
+    margin: 0px auto;
+    width: 400px;
+    min-width: 400px;
+}
+
+.giohang{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}

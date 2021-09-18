@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Menu.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/searchBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Project</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_logo">
+            <img class="header_logo_image" src="./pictures/header_logo.png" alt="">
+        </div>
+        <div class="header_icon">
+            <div class="search_icon">
+                <i id="search" class="fa fa-search fa-2x" aria-hidden="true"></i>
+                <div id="myModal2" class="modal-search">
+                    <div class="modal-content-search">
+                        <span class="close">&times;</span>
+                        <div class="searchBox">
+                            <div class="wrap">
+                                <div class="searchBar">
+                                    <input type="text" id="mySearch" onkeyup="displaySearchBar()" class="searchTerm" placeholder="Search.." title="Type in a category">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <div class="searchBar-items">
+                                    <ul id="myMenu">
+                                        <li>HTML</li>
+                                        <li>css</li>
+                                        <li>js</li>
+                                    </ul>
+                                </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping_icon">
+                <i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="menu_icon">
+                <i id="menu" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                <div id="myModal1" class="modal-menu">
+                    <div class="modal-content-menu">
+                        <span class="close">&times;</span>
+                        <div class="home">
+                            HOME
+                        </div>
+                        <div class="all-products">
+                            ALL PRODUCTS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div class="name">
+                <div class="type"><p>Women's Shoe</p></div>
+                <div class="shoeName">NIKE AIR JORDAN 1 MID GS</div>
+            </div>
+            <div class="info">
+                <p>The Air Jordan 1 Mid brings full-court style and premium comfort to an iconic look. Its Air-Sole unit cushions play on the hardwood, while the padded collar gives you a supportive feel</p>
+            </div>
+            <div class="price">
+                <div class="price_title">
+                    PRICE
+                </div>
+                <div class="price_number">
+                    $160
+                </div>
+            </div>
+            <div class="cart">
+               <a class="button" href="#"> 
+                   <div class="button_cart">
+                    ADD TO CART
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="imgMain">
+                <img src="./pictures/Jordan-1-Mid-GS-Pink-Quartz.png" alt="">
+            </div>
+            <div class="switchImgButton">
+                <a class="switch" href="#"><div class="backSwitch"><i class="fa fa-chevron-left" aria-hidden="true"></i></div></a>
+                <a class="switch" href="#"><div class="forwardSwitch"><i class="fa fa-chevron-right" aria-hidden="true"></i></div></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="size_title">
+                <div class="title">SIZE</div>
+                <div class="size_grid">
+                        <a class="grid-button" href="#"><div class="size">US1</div></a>
+                        <a class="grid-button" href="#"><div class="size">US2</div></a>
+                        <a class="grid-button" href="#"><div class="size">US3</div></a>
+                        <a class="grid-button" href="#"><div class="size">US4</div></a>
+                        <a class="grid-button" href="#"><div class="size">US5</div></a>
+                        <a class="grid-button" href="#"><div class="size">US6</div></a>
+                        <a class="grid-button" href="#"><div class="size">US7</div></a>
+                        <a class="grid-button" href="#"><div class="size">US8</div></a>
+                        <a class="grid-button" href="#"><div class="size">US9</div></a>
+                        <a class="grid-button" href="#"><div class="size">US10</div></a>
+                </div>
+            </div>
+            <div class="color_title">
+                <div class="title">COLOR</div>
+                <div class="chooseColor">
+                    <div class="color itemcolor1"></div>
+                    <div class="color itemcolor2"></div>
+                    <div class="color itemcolor3"></div>
+                </div>
+            </div>
+            <div class="product_title">
+                <div class="title">PRODUCT REVIEW</div>
+                <div class="shoe_picture">
+                    <div class="minipic picture1"><img src="./pictures/Jordan-1-Mid-GS-Pink-Quartz.png" alt=""></div>
+                    <div class="minipic picture2"><img src="./pictures/reverse-180-pinkquartz.png" alt=""></div>
+                    <div class="minipic picture3"><img src="./pictures/fornviewdouble.png" alt=""></div>
+                    <div class="minipic picture4"><img src="./pictures/backviewdouble.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/project.js"></script>
+    <script src="./js/searchBar.js"></script>
+</body>
+</html>
