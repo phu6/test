@@ -277,5 +277,5 @@ function ImgSlideShow(){
     }else {
         i = 0
     }
-    // setInterval(ImgSlideShow(), 5000)
+    // setInterval(ImgSlideShow(), 1000)
 }
