@@ -1,11 +1,14 @@
 *{
     font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color:black;
+    color:white;
     border: 0;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+.main{
+    min-height: 100vh;
+    background: linear-gradient(#1c1c1c,#323232);
 }
 .header{
     display: flex;
@@ -34,7 +37,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.shoeName{
+#shoeName{
+    width:300px;
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -42,6 +46,7 @@
     font-weight: bold;
 }
 .info{
+    width:400px;
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -59,13 +64,14 @@
 .button_cart{
     height: 50px;
     width: 200px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #131313;
     text-align: center;
     line-height: 50px;
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 30px;
+    cursor: pointer;
 }
 .title{
     font-size: 23px;
@@ -81,38 +87,12 @@
 .size{
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color: #434343;
     margin: 8px;
     line-height: 60px;
     text-align: center;
-    border:1px solid black;
-}
-.color{
-    margin-top: 100px
-}
-.chooseColor{
-    display: flex; 
-}
-.color{
-    margin: 8px;
-}
-.itemcolor1{
-    background-color: palevioletred;
-    width:20px;
-    height: 20px;
-    border-radius: 100%;
-}
-.itemcolor2{
-    background-color: lightskyblue;
-    width:20px;
-    height: 20px;
-    border-radius: 100%;
-}
-.itemcolor3{
-    background-color: yellow;
-    width:20px;
-    height: 20px;
-    border-radius: 100%;
+    border-radius: 10px;
+
 }
 .shoe_picture{
     display: flex;
@@ -121,52 +101,21 @@
     color:white;
     list-style: none;
     text-decoration: none;
-    background-color: white;
+    background-color: #131313;
 }
 .imgMain{
     margin-top: 32px;
-    margin-left: 24px;
+    display: flex;
+    justify-content: center;
 }
 .imgMain img{
     width: 80%;
     height: 80%;
-    transform: rotate(-35deg);
+    margin-left: 40px;
+    margin-top: 40px;
 }
-.switchImgButton{
-    display: flex;
-    margin-left: 70%;
-    margin-top: 50px;
-}
-.switch,.grid-button{
-    text-decoration: none;
-}
-.backSwitch{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 100%;
-    background-color: lightgray;
-    margin-left: 5px;
-    margin-right: 5px;
-    line-height: 50px;
-    
-}
-.forwardSwitch{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 100%;
-    background-color:lightgray;
-    margin-left: 5px;
-    margin-right: 5px;
-    line-height: 50px;
-}
-.backSwitch i, .forwardSwitch i{
-    background-color: lightgray;
-}
-.grid-button:hover .size{
-    background-color:lightgray;
-    
+.size_grid:hover .size{
+    cursor: pointer;
 }
 .link{
     width: 50px;
@@ -177,53 +126,54 @@
     margin-right: 5px;
     line-height: 50px;
 }
-.picture1 img{
-    width:60px;
-    height: 30px;
+#picture1 {
+    width:80px;
+    height: 40px;
     margin-left: 5px;
     margin-top: 20px;
+    cursor: pointer;
 }
-.picture2 img{
-    width:60px;
-    height: 30px;
+#picture2 {
+    width:80px;
+    height: 40px;
     margin-left: 5px;
     margin-top: 20px;
-    transform: scaleX(-1);
+    cursor: pointer;
 }
-.picture3 img{
-    width:60px;
-    height: 30px;
+#picture3 {
+    width:80px;
+    height: 40px;
     margin-left: 5px;
     margin-top: 20px;
+    cursor: pointer;
 }
-.picture4 img{
-    width:60px;
-    height: 30px;
+#picture4 {
+    width:80px;
+    height: 40px;
     margin-left: 5px;
     margin-top: 20px;
+    cursor: pointer;
 }
 .minipic{
     width: 80px;
     height: 80px;
     margin: 5px;
-}
-.minipic img:hover{
-    border:1px solid black;
+    transition:0.5s
 }
 .header_icon{
     display: flex;
     margin-left: 80%;
-    margin-top: 24px;
+    margin-top: 20px;
+    height: 100px;
     line-height: 50px;
+}
+.menu_icon{
+    margin-top: 4px;
 }
 .menu_icon, .search_icon, .shopping_icon{
     margin-left:8px;
     margin-right: 8px;
 }
-.shopping_icon{
-    margin-top: 24px;
-}
-.menu_icon{
-    margin-right: 8px;
-    margin-top: 28px;
+.minipic:hover{
+    transform: translateY(-15px);
 }

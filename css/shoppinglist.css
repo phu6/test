@@ -1,10 +1,14 @@
 *{
     font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color:black;
+
+    color:white;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+#shoppingList{
+    min-height: 100vh;
+    background: linear-gradient(#1c1c1c,#323232);
 }
 .header{
     display: flex;
@@ -23,26 +27,68 @@
 .shoppinglist-container{
     width: 400px;
     height: 100%;
+    max-height: 100vh;
     margin-left: 40%;
-
+    -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    box-shadow: 0px 0px 3px 5px #f2e1f2;
+    /* box-shadow: rgba(57,255,20, 0.25) 0px 54px 55px, 
+    rgba(57,255,20, 0.12) 0px -12px 30px, 
+    rgba(57,255,20, 0.12) 0px 4px 6px, 
+    rgba(57,255,20, 0.17) 0px 12px 13px, 
+    rgba(57,255,20, 0.09) 0px -3px 5px; */
 }
-.table{
-    border: 1px solid black;
+ul{
+    list-style-type: none;
+    margin-left: 16px;
+    margin-top: 24px;
 }
-tr{
-    border: 1px solid black;
+li{
+    height: 100px;
+    width: 95%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
 }
-
-.form-main{
-    border: 1px solid black;
-    padding:16px;
-    margin: 0px auto;
-    width: 400px;
-    min-width: 400px;
+li:hover + .remove{
+    display: block;
 }
-
-.giohang{
-    text-transform: uppercase;
+.gio_hang{
     text-align: center;
-    font-weight: bold;
+    font-size: 40px
+}
+button{
+    border: none;
+}
+.header_icon{
+    display: flex;
+    margin-left: 80%;
+    margin-top: 20px;
+    height: 100px;
+    line-height: 50px;
+}
+#dropdown{
+    margin-left: 16px;
+}
+.menu_icon{
+    margin-top: 4px;
+}
+.menu_icon, .search_icon, .shopping_icon{
+    margin-left:8px;
+    margin-right: 8px;
+}
+#deleteButton{
+    margin-left: 100px;
+}
+.picture img{
+    margin-left: 50px;
+    width: 120px;
+    height: 95px;
+}
+.name{
+    margin-left: 8px;
+    margin-top: 8px;
+}
+#remove{
+    cursor: pointer;
 }

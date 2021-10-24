@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Menu.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/searchBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Project</title>
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header_logo">
+                <a href="mainPage.html"><img class="header_logo_image" src="./pictures/header_logo.png" alt=""></a>
+            </div>
+            <div class="header_icon">
+                <div class="search_icon">
+                    <i id="search" class="fa fa-search fa-2x" aria-hidden="true"></i>
+                    <div id="myModal2" class="modal-search">
+                        <div class="modal-content-search">
+                            <span class="close">&times;</span>
+                            <div class="searchBox">
+                                <div class="wrap">
+                                    <div class="searchBar">
+                                        <input type="text" id="mySearch" onkeyup="filterSearchItems()" class="searchTerm" placeholder="Search.." title="Type in a category">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <div class="searchBar-items">
+                                        <ul id="myMenu">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping_icon">
+                    <a href="ShoppingList.html"><i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="menu_icon">
+                    <i id="menu" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    <div id="myModal1" class="modal-menu">
+                        <div class="modal-content-menu">
+                            <span class="close">&times;</span>
+                            <div class="home">
+                                <a href="mainPage.html">HOME</a>
+                            </div>
+                            <div class="all-products">
+                                <a href="Product.html">ALL PRODUCTS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="left">
+                <div class="name">
+                    <div class="type"><p>Lifestyle</p></div>
+                    <div id="shoeName">Fragment Design x sacai x LDV Waffle 'Light Smoke Grey'</div>
+                </div>
+                <div class="info">
+                    <p>The Fragment Design x sacai x Nike LDV Waffle ‘Light Smoke Grey’ brings together Chitose Abe and Hiroshi Fujiwara on a three-way sneaker collaboration that borrows elements from the Nike LDV and Waffle Racer. In keeping with sacai’s signature aesthetic, the upper is crafted from grey mesh with double-stacked tonal suede overlays along the forefoot, heel and eyestay. The white leather Swoosh, laces and tongue are similarly doubled up, with the latter featuring Nike and Fragment woven tags. Additional branding includes printed text on the elongated foam midsole that reads ‘The Classic / Fragment: sacai.’ Underfoot, a waffle-traction rubber outsole delivers reliable grip.</p>
+                </div>
+                <div class="price">
+                    <div class="price_title">
+                        PRICE
+                    </div>
+                    <div class="price_number">
+                        $285
+                    </div>
+                </div>
+                <div class="cart">
+                   <button id="addToCart" class="button_cart" onclick="add()"> 
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="middle">
+                <div id="img-container" class="imgMain">
+                    <img class="myImg" src="./pictures/FragmentSaccaiWaffle/1.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="size_title">
+                    <div class="title">SIZE</div>
+                    <div class="size_grid">
+                        <div id="1"class="size" onclick="chooseSize(1)">US1</div>
+                        <div id="2"class="size" onclick="chooseSize(2)">US2</div>
+                        <div id="3"class="size" onclick="chooseSize(3)">US3</div>
+                        <div id="4"class="size" onclick="chooseSize(4)">US4</div>
+                        <div id="5"class="size" onclick="chooseSize(5)">US5</div>
+                        <div id="6"class="size" onclick="chooseSize(6)">US6</div>
+                        <div id="7"class="size" onclick="chooseSize(7)">US7</div>
+                        <div id="8"class="size" onclick="chooseSize(8)">US8</div>
+                        <div id="9"class="size" onclick="chooseSize(9)">US9</div>
+                        <div id="10"class="size" onclick="chooseSize(10)">US10</div>
+                    </div>
+                </div>
+                <div class="product_title">
+                    <div class="title" style="margin-top: 40px">PRODUCT REVIEW</div>
+                    <div class="shoe_picture" style="margin-top: 40px">
+                        <div class="minipic"><img id="picture1"src="./pictures/FragmentSaccaiWaffle/1.png"  onclick="imgChange('./pictures/FragmentSaccaiWaffle/1.png')"></div>
+                        <div class="minipic"><img id="picture2" src="./pictures/FragmentSaccaiWaffle/2.png"  onclick="imgChange('./pictures/FragmentSaccaiWaffle/2.png')"></div>
+                        <div class="minipic"><img id="picture3"  src="./pictures/FragmentSaccaiWaffle/3.png" onclick="imgChange('./pictures/FragmentSaccaiWaffle/3.png')"></div>
+                        <div class="minipic"><img id="picture4" src="./pictures/FragmentSaccaiWaffle/4.png" onclick="imgChange('./pictures/FragmentSaccaiWaffle/4.png')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/searchBar.js"></script>
+</body>
+</html>
